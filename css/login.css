@@ -65,7 +65,7 @@ form {
 }
 
 form.sign-up-form {
-    margin-bottom: 200px;
+    margin-bottom: 25px;
     opacity: 0;
     z-index: 1;
 }
