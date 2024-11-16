@@ -39,4 +39,3 @@ sendRecovery.addEventListener("click", () => {
         alert("Por favor, insira um e-mail válido.");
     }
 });
-
