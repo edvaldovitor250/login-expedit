@@ -12,7 +12,6 @@
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="/css/stylerGlobal.css">
-
 </head>
 
 <body>
@@ -36,20 +35,15 @@
                         <input type="password" placeholder="Senha" />
                     </div>
                     <a href="./financeiro.html" class="btn">Entrar</a>
-                    <p class="social-text">Ou conecte-se através das plataformas</p>
+                    <p class="social-text">
+                        <a href="#" id="forgot-password-link">Esqueci minha senha</a>
+                    </p>
                     <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+  
                         <a href="#" class="social-icon">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+
                     </div>
                 </form>
                 <form action="#" class="sign-up-form">
@@ -70,17 +64,9 @@
                     <p class="social-text">Ou cadastre-se através das plataformas</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-icon">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                       
                     </div>
                 </form>
             </div>
@@ -110,5 +96,27 @@
         </div>
     </div>
 
+    <div class="modal" id="forgot-password-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close-modal">
+                    <i class="fas fa-times"></i> 
+                </span>
+            </div>
+            <h2>Recuperar Senha</h2>
+            <p>Informe o seu e-mail cadastrado para receber instruções de recuperação de senha:</p>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email-recovery" placeholder="Digite seu e-mail" />
+            </div>
+            <button class="btn" id="send-recovery">Enviar</button>
+        </div>
+    </div>
+    
+    
+    
+
     <script defer src="../js/login.js"></script>
 </body>
+
+</html>
